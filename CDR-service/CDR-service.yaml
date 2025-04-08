@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:roaming-aggregator-db
+    url: jdbc:h2:tcp://localhost:1521/~/cdr-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driver-class-name: org.h2.Driver
     username: sa
     password: password
@@ -8,11 +8,14 @@ spring:
     console:
       path: /h2-console
       enabled: true
+      settings:
+        web-allow-others: true
   jpa:
     hibernate:
       ddl-auto: validate
+    database-platform: org.hibernate.dialect.H2Dialect
     defer-datasource-initialization: false
-    show-sql: false
+    show-sql: true
 
 
 eureka:
