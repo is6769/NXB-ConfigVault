@@ -1,0 +1,28 @@
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: admin
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    defer-datasource-initialization: false
+    database: postgresql
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://brt-db:5432/bdt-db
+    username: postgres
+    password: postgres
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://eureka-server:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 8081
