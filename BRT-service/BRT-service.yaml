@@ -1,3 +1,22 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    defer-datasource-initialization: false
+    database: postgresql
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:<PORT>/bdt-db
+    username: postgres
+    password: postgres
+
 eureka:
   client:
     service-url:
