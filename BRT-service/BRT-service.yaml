@@ -13,7 +13,7 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:<PORT>/bdt-db
+    url: jdbc:postgresql://localhost:5432/bdt-db
     username: postgres
     password: postgres
 
