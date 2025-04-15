@@ -13,7 +13,7 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://brt-db:5432/bdt-db
+    url: jdbc:postgresql://brt-db:5432/brt-db
     username: postgres
     password: postgres
 
