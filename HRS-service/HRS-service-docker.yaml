@@ -1,3 +1,16 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    defer-datasource-initialization: false
+    database: postgresql
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/hrs-db
+    username: postgres
+    password: postgres
+
 eureka:
   client:
     serviceUrl:
