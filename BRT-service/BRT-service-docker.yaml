@@ -17,6 +17,10 @@ spring:
     username: postgres
     password: postgres
 
+const:
+  hrs-service:
+    BASE_URI: http://hrs-service:8084
+
 eureka:
   client:
     serviceUrl:
