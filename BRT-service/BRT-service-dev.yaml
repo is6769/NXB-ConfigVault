@@ -19,7 +19,7 @@ spring:
 
 const:
   hrs-service:
-    BASE_URI: http://localhost:8084
+    BASE_URL: http://localhost:8084
 
 eureka:
   client:
