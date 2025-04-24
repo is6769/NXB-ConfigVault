@@ -25,7 +25,13 @@ spring:
 const:
   numberOfGenerationThreads: 5
   numberOfRecordsInCDR: 10
-
+  rabbitmq:
+    CDR_QUEUE_NAME: cdr.queue
+    CDR_EXCHANGE_NAME: cdr.direct
+    CDR_ROUTING_KEY: cdr.created
+  scheduled:
+    consume-cdr-rate: 5000
+    produce-cdr-rate: 5000
 
 eureka:
   client:

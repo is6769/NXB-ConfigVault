@@ -20,6 +20,10 @@ spring:
 const:
   hrs-service:
     BASE_URL: http://hrs-service:8084
+  rabbitmq:
+    CDR_QUEUE_NAME: cdr.queue
+    CDR_EXCHANGE_NAME: cdr.direct
+    CDR_ROUTING_KEY: cdr.created
 
 eureka:
   client:
