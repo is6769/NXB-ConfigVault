@@ -11,6 +11,17 @@ spring:
     username: postgres
     password: postgres
 
+const:
+  rabbitmq:
+    bills:
+      BILLS_QUEUE_NAME: bills.queue
+      BILLS_EXCHANGE_NAME: bills.exchange
+      BILLS_ROUTING_KEY: bills.created
+    tariffication:
+      CALL_USAGE_QUEUE_NAME: tariffication.usage.call.queue
+      CALL_USAGE_ROUTING_KEY: tariffication.usage.call.*
+      TARIFFICATION_EXCHANGE_NAME: tariffication.exchange
+
 eureka:
   client:
     serviceUrl:
