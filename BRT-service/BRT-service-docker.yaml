@@ -19,7 +19,7 @@ spring:
 
 const:
   hrs-service:
-    BASE_URL: http://hrs-service:8084
+    BASE_URL: http://hrs-service
   rabbitmq:
     cdr:
       CDR_QUEUE_NAME: cdr.queue
