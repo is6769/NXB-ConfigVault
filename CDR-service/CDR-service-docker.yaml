@@ -30,7 +30,7 @@ const:
     CDR_ROUTING_KEY: cdr.created
   scheduled:
     consume-cdr-rate: 5000
-    produce-cdr-rate: 5000
+    produce-cdr-rate: 300
 
 
 eureka:
