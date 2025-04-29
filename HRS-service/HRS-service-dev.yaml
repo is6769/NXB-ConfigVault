@@ -27,6 +27,10 @@ const:
       CALL_USAGE_QUEUE_NAME: tariffication.usage.call.queue
       CALL_USAGE_ROUTING_KEY: tariffication.usage.call
       TARIFFICATION_EXCHANGE_NAME: tariffication.exchange
+    dead-letter:
+      DEAD_LETTER_QUEUE_POSTFIX: .dlq
+      DEAD_LETTER_EXCHANGE_POSTFIX: .dlx
+      DEAD_LETTER_ROUTING_KEY_POSTFIX: .dlr
 
 eureka:
   client:
