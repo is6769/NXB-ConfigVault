@@ -25,9 +25,14 @@ const:
   numberOfGenerationThreads: 5
   numberOfRecordsInCDR: 10
   rabbitmq:
-    CDR_QUEUE_NAME: cdr.queue
-    CDR_EXCHANGE_NAME: cdr.direct
-    CDR_ROUTING_KEY: cdr.created
+    cdr:
+      CDR_QUEUE_NAME: cdr.queue
+      CDR_EXCHANGE_NAME: cdr.direct
+      CDR_ROUTING_KEY: cdr.created
+    dead-letter:
+      DEAD_LETTER_QUEUE_POSTFIX: .dlq
+      DEAD_LETTER_EXCHANGE_POSTFIX: .dlx
+      DEAD_LETTER_ROUTING_KEY_POSTFIX: .dlr
   scheduled:
     consume-cdr-rate: 5000
     produce-cdr-rate: 300
