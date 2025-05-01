@@ -7,7 +7,7 @@ eureka:
 
 const:
   brt-service:
-    BASE_URL: http://brt-service
+    BASE_URL: http://BRT-service
 
 server:
   port: 8083
