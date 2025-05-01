@@ -5,5 +5,9 @@ eureka:
   instance:
     prefer-ip-address: true
 
+const:
+  brt-service:
+    BASE_URL: http://brt-service
+
 server:
   port: 8083
