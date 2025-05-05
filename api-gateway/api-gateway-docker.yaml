@@ -1,3 +1,15 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: CRM-service
+          uri: lb://CRM-service
+          predicates:
+            - Path=/crm/**
+          filters:
+            - StripPrefix=1
+            - JwtHeaderFilter
+
 eureka:
   client:
     serviceUrl:
