@@ -12,7 +12,7 @@ spring:
 
 const:
   auth:
-    introspection-uri:
+    introspection-uri: http://localhost:8765/auth/introspection
 
 eureka:
   client:
