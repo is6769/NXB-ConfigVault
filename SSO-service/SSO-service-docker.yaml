@@ -11,6 +11,13 @@ spring:
     username: postgres
     password: postgres
 
+const:
+  rabbitmq:
+    subscriber:
+      SUBSCRIBER_CREATED_QUEUE_NAME: subscriber.created.queue
+      SUBSCRIBER_CREATED_EXCHANGE_NAME: subscriber.created.exchange
+      SUBSCRIBER_CREATED_ROUTING_KEY: subscriber.created
+
 eureka:
   client:
     serviceUrl:

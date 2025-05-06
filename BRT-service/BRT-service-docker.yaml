@@ -33,6 +33,10 @@ const:
       CALL_USAGE_QUEUE_NAME: tariffication.usage.call.queue
       CALL_USAGE_ROUTING_KEY: tariffication.usage.call
       TARIFFICATION_EXCHANGE_NAME: tariffication.exchange
+    subscriber:
+      SUBSCRIBER_CREATED_QUEUE_NAME: subscriber.created.queue
+      SUBSCRIBER_CREATED_EXCHANGE_NAME: subscriber.created.exchange
+      SUBSCRIBER_CREATED_ROUTING_KEY: subscriber.created
     dead-letter:
       DEAD_LETTER_QUEUE_POSTFIX: .dlq
       DEAD_LETTER_EXCHANGE_POSTFIX: .dlx
