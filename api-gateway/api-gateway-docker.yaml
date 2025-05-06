@@ -12,7 +12,7 @@ spring:
 
 const:
   auth:
-    introspection-uri: http://sso-service/auth/introspection
+    introspection-uri: http://SSO-service/auth/introspection
 
 eureka:
   client:
