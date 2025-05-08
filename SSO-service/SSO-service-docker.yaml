@@ -21,6 +21,10 @@ const:
       SUBSCRIBER_CREATED_QUEUE_NAME: subscriber.created.queue
       SUBSCRIBER_CREATED_EXCHANGE_NAME: subscriber.created.exchange
       SUBSCRIBER_CREATED_ROUTING_KEY: subscriber.created
+    dead-letter:
+      DEAD_LETTER_QUEUE_POSTFIX: .dlq
+      DEAD_LETTER_EXCHANGE_POSTFIX: .dlx
+      DEAD_LETTER_ROUTING_KEY_POSTFIX: .dlr
 
 eureka:
   client:
