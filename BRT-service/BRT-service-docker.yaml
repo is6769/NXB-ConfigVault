@@ -49,6 +49,7 @@ eureka:
       defaultZone: http://eureka-server:8761/eureka
   instance:
     prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 2
 
 server:
   port: 8081
