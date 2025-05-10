@@ -9,5 +9,14 @@ const:
   brt-service:
     BASE_URL: http://BRT-service
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,eurekaRegistration"
+  endpoint:
+    health:
+      show-details: always
+
 server:
   port: 8083
