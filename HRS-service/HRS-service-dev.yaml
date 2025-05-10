@@ -37,7 +37,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
     healthcheck:
-      enabled: true # Tell Eureka to use Actuator health status
+      enabled: true
   instance:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 2
