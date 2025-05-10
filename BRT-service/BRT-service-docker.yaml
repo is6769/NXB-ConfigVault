@@ -42,16 +42,6 @@ const:
       DEAD_LETTER_EXCHANGE_POSTFIX: .dlx
       DEAD_LETTER_ROUTING_KEY_POSTFIX: .dlr
 
-management:
-  endpoint:
-    health:
-      show-details: always
-
-  endpoints:
-    web:
-      exposure:
-        include: *
-
 eureka:
   client:
     serviceUrl:
