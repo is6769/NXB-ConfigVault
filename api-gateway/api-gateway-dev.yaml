@@ -9,6 +9,12 @@ spring:
           filters:
             - StripPrefix=1
             - JwtHeaderFilter
+        - id: SSO-service
+          uri: lb://SSO-service
+          predicates:
+            - Path=/sso/**
+          filters:
+            - StripPrefix=1
 
 const:
   auth:
