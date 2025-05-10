@@ -51,5 +51,14 @@ eureka:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 2
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,eurekaRegistration"
+  endpoint:
+    health:
+      show-details: always
+
 server:
   port: 8081
