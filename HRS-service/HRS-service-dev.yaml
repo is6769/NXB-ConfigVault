@@ -36,9 +36,24 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+    healthcheck:
+      enabled: true # Tell Eureka to use Actuator health status
   instance:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 2
+
+management: # Configure Actuator
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,prometheus,metrics,eurekaRegistration" # Expose health, info and custom health indicator
+  endpoint:
+    health:
+      show-details: always # Show detailed health information
+      # Optional: if you want your custom health indicator to be part of the main health status by default
+      # group:
+      #   readiness:
+      #     include: "eurekaRegistration,db,diskSpace,ping" # Add other relevant health indicators
 
 server:
   port: 8084
